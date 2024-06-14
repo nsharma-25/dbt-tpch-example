@@ -36,7 +36,7 @@ Create a dbt profile in ~/.dbt/profiles.yml
 The sample profile looks like this:
 
 ```
-dbt_tpch_test:
+dbt_tpch_example:
   outputs:
     dev_hive:
       type: hive
@@ -102,7 +102,7 @@ dbt run --select <model-name>
 ```
 **dbt test**
 
-Our project has been configured with a couple of tests. As of this project, we are using a package called [dbt-utils](https://github.com/dbt-labs/dbt-utils). Custom tests can also be added to the ```dbt_tpch_test/tests/``` folder.
+Our project has been configured with a couple of tests. As of this project, we are using a package called [dbt-utils](https://github.com/dbt-labs/dbt-utils). Custom tests can also be added to the ```tests/``` folder.
 
 Few tests that has been included in this project are checking the column values to be unique, not null and also comparing the equality of models in this case the equality of actual output tables and the expected output tables (which have been included in the ```seeds/expected``` folder).
 
