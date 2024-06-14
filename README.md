@@ -3,10 +3,19 @@ More details about TPC-H can be found on [TPC Website](https://www.tpc.org/tpch/
 
 In this project we are using 1GB TPC-H dataset that is present in the Hive warehouse.
 
+## Getting Started
+It is recommended to use ```venv``` to create a Python virtual environment for the demo.
+
 
 ### Install
 
-Start by cloning this repo;
+Start by cloning this repo
+
+```
+git clone https://github.com/nsharma-25/dbt-tpch-example.git
+```
+
+
 
 Next install dbt-core and dbt-hive
 
