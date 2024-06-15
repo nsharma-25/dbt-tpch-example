@@ -36,7 +36,7 @@ Create a dbt profile in ~/.dbt/profiles.yml
 The sample profile looks like this:
 
 ```
-dbt_tpch_example:
+dbt_tpch_test:
   outputs:
     dev_hive:
       type: hive
