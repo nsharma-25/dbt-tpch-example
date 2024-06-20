@@ -6,6 +6,10 @@ In this project we are using 1GB TPC-H dataset that is present in the Hive wareh
 ## Getting Started
 It is recommended to use ```venv``` to create a Python virtual environment for the demo.
 
+### Requirements
+* 3.8 <= Python <= 3.11
+* dbt-core
+* git
 
 ### Install
 
@@ -102,7 +106,7 @@ dbt run --select <model-name>
 ```
 **dbt test**
 
-Our project has been configured with a couple of tests. As of this project, we are using a package called [dbt-utils](https://github.com/dbt-labs/dbt-utils). Custom tests can also be added to the ```tests/``` folder.
+Our project has been configured with a couple of tests. As of this project, we are using a package called [dbt-utils](https://github.com/dbt-labs/dbt-utils). Macros for the custom tests can also be added to the ```macros/``` folder.
 
 Few tests that has been included in this project are checking the column values to be unique, not null and also comparing the equality of models in this case the equality of actual output tables and the expected output tables (which have been included in the ```seeds/expected``` folder).
 
