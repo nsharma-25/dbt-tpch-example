@@ -40,6 +40,9 @@ models:
     tpch_queries:
       +materialized: view  
 
-# seeds:
-#   dbt_tpch_test:
-#      +delimiter: "|" 
+seeds:
+  dbt_tpch_test:
+    expected: 
+      q22_output:
+        +column_types:
+          cntrycode: string
