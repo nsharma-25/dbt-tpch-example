@@ -92,7 +92,7 @@ There are 3 sets of models in this project. Each set of models contain their own
 
 * Lastly, we have ```tpch_queries```. These are [Models](https://docs.getdbt.com/docs/build/sql-models) that use the ```ref()``` method to refer to the staging models. These are the models based on the standard tpch_queries and have been materialized as View.
 
-  Our  22 ```tpch_queries``` models are present in the ```models/tpch_queries.
+  Our  22 ```tpch_queries``` models are present in the ```models/tpch_queries```.
 
 Run the models with
 
