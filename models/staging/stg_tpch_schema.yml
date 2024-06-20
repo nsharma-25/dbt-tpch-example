@@ -7,6 +7,10 @@ models:
         tests:
           - unique
           - not_null
+      - name: market_segment
+        tests:
+          - accepted_values:
+              values: ['AUTOMOBILE', 'HOUSEHOLD', 'MACHINERY', 'BUILDING', 'FURNITURE']
                 
   - name: stg_tpch_lineitem
 

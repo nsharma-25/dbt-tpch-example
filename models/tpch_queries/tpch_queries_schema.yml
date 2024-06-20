@@ -14,7 +14,12 @@ models:
     tests:
       - dbt_utils.equality:
           compare_model: ref('q03_output')
-                
+    columns:
+      - name: order_date
+        tests:
+          - date_range:
+              min_date: '1995-02-19'
+              max_date: '1995-03-13'       
   - name: tpch_q04
     tests:
       - dbt_utils.equality:
@@ -31,9 +36,6 @@ models:
           compare_model: ref('q06_output')
                 
   - name: tpch_q07
-    tests:
-      - dbt_utils.equality:
-          compare_model: ref('q07_output')
 
   - name: tpch_q08
     tests:

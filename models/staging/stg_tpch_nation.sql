@@ -13,4 +13,5 @@ select
 from
     source
 ) 
+
 select * from final    
